@@ -51,7 +51,7 @@ Update Real-Time Chart
 (Add screenshots here)
 
 ```markdown
-![Chart](screenshots/chart.png)
+!(screenshots/chart.png)
 ```
 
 ---
@@ -75,13 +75,18 @@ Update Real-Time Chart
 Realtime-Support-Resistance-Engine/
 │
 ├── main.py
+├── trendlineData.py
+├── supportResistance.py
+├── plot.py
+├── newCandlestick.py
+├── historicalData.py
 ├── requirements.txt
 ├── README.md
 ├── screenshots/
 │   └── chart.png
-├── credentials.py          # ignored
-├── access_token.txt        # ignored
-└── .gitignore
+├── credentials.py
+├── autoLogin.py
+└── configuration.py
 ```
 
 ---
