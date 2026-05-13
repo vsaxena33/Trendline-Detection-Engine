@@ -70,8 +70,6 @@ Update Real-Time Chart
 ```text
 Realtime-Support-Resistance-Engine/
 │
-├── screenshots/
-│   └── chart.png
 ├── main.py
 ├── trendlineData.py
 ├── supportResistance.py
