@@ -1,4 +1,4 @@
-# Trendline-Detection-Engine
+# 📈 Trendline-Detection-Engine
 
 Real-time market structure detection engine using WebSocket streaming, live candlestick generation, and dynamic support/resistance trendline zones.
 
@@ -6,7 +6,7 @@ This project connects to the FYERS WebSocket API, receives live market ticks, bu
 
 ---
 
-# Features
+# ✨ Features
 
 - Real-time WebSocket market data streaming
 - Live OHLCV candlestick generation
@@ -21,7 +21,7 @@ This project connects to the FYERS WebSocket API, receives live market ticks, bu
 
 ---
 
-# How the System Works
+# ⚙️ How the System Works
 
 ```text
 Live WebSocket Tick
@@ -41,22 +41,18 @@ Update Real-Time Chart
 
 ---
 
-# Example Output
+# 📊 Example Output
 
 ## Real-Time Support & Resistance Zones
 
-- Green Zones → Support Regions
-- Red Zones → Resistance Regions
+- 🟢 Green Zones → Support Regions
+- 🔴 Red Zones → Resistance Regions
 
-(Add screenshots here)
-
-```markdown
-!(screenshots/chart.png)
-```
+![Chart](screenshots/chart.png)
 
 ---
 
-# Technologies Used
+# 🛠️ Technologies Used
 
 - Python
 - FYERS API
@@ -69,11 +65,13 @@ Update Real-Time Chart
 
 ---
 
-# Project Structure
+# 📁 Project Structure
 
 ```text
 Realtime-Support-Resistance-Engine/
 │
+├── screenshots/
+│   └── chart.png
 ├── main.py
 ├── trendlineData.py
 ├── supportResistance.py
@@ -81,24 +79,23 @@ Realtime-Support-Resistance-Engine/
 ├── newCandlestick.py
 ├── historicalData.py
 ├── requirements.txt
-├── README.md
-├── screenshots/
-│   └── chart.png
-├── credentials.py
 ├── autoLogin.py
-└── configuration.py
+├── configuration.py
+├── credentials.py
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-# Installation
+# 🚀 Installation
 
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Realtime-Support-Resistance-Engine.git
+git clone https://github.com/vsaxena33/Trendline-Detection-Engine.git
 
-cd Realtime-Support-Resistance-Engine
+cd Trendline-Detection-Engine
 ```
 
 ---
@@ -111,45 +108,39 @@ pip install -r requirements.txt
 
 ---
 
-# Required Libraries
+# 🔑 API Setup
+
+To run this project you need:
+
+- A Fyers trading account
+- API credentials
+- Access token
+
+Generate the access token using:
 
 ```bash
-pip install fyers-apiv3
-pip install pandas
-pip install numpy
-pip install matplotlib
-pip install mplfinance
-pip install trendln
-pip install pytz
+python autoLogin.py
 ```
 
----
+> Note: Due to SEBI guidelines, a new access token must be generated daily.
 
-# Setup FYERS Credentials
+Add your FYERS API credentials inside:
 
-Create:
-
-```text
+```python
 credentials.py
 ```
 
-Inside it:
+Example:
 
 ```python
-client_id = "YOUR_CLIENT_ID"
+CLIENT_ID = "YOUR_CLIENT_ID"
+SECRET_KEY = "YOUR_SECRET_KEY"
+REDIRECT_URI = "YOUR_REDIRECT_URI"
 ```
-
-Also create:
-
-```text
-access_token.txt
-```
-
-Paste your FYERS access token inside it.
 
 ---
 
-# Running the Project
+# ▶️ Running the Project
 
 ```bash
 python main.py
@@ -157,9 +148,9 @@ python main.py
 
 ---
 
-# Important Concepts Used
+# 📚 Important Concepts Used
 
-## OHLCV Candles
+## 📌 OHLCV Candles
 
 Each candle contains:
 
@@ -171,7 +162,7 @@ Each candle contains:
 
 ---
 
-## Support Zones
+## 🟢 Support Zones
 
 Support zones are areas where price tends to stop falling and buyers become active.
 
@@ -179,7 +170,7 @@ These zones are generated using swing lows and trendline fitting.
 
 ---
 
-## Resistance Zones
+## 🔴 Resistance Zones
 
 Resistance zones are areas where price tends to stop rising and sellers become active.
 
@@ -187,7 +178,7 @@ These zones are generated using swing highs and trendline fitting.
 
 ---
 
-## Active Trendlines
+## 📈 Active Trendlines
 
 A trendline remains active only while price respects the support/resistance zone.
 
@@ -195,7 +186,7 @@ If price strongly breaks the zone, the trendline is invalidated automatically.
 
 ---
 
-# Future Improvements
+# 🔮 Future Improvements
 
 - Multi-symbol support
 - Breakout signal generation
@@ -209,7 +200,7 @@ If price strongly breaks the zone, the trendline is invalidated automatically.
 
 ---
 
-# Educational Purpose
+# 🎓 Educational Purpose
 
 This project demonstrates important concepts used in:
 
@@ -222,12 +213,12 @@ This project demonstrates important concepts used in:
 
 ---
 
-# Author
+# 👨‍💻 Author
 
 Vaibhav Saxena
 
 ---
 
-# License
+# 📜 License
 
 This project is licensed under the MIT License.
