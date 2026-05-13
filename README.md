@@ -184,6 +184,42 @@ If price strongly breaks the zone, the trendline is invalidated automatically.
 
 ---
 
+# 🧪 Research & Prototyping Notebook
+
+The repository also contains an experimental research notebook:
+
+```text
+utils/trendline.ipynb
+```
+
+This notebook was used during the development phase to:
+
+- experiment with trendline logic,
+- study market structure behavior,
+- prototype support/resistance zones,
+- validate trendline invalidation rules,
+- and test visualization techniques.
+
+The notebook works on static historical data and serves as a sandbox
+environment for testing ideas before integrating them into the real-time
+websocket engine.
+
+---
+
+## Purpose of the Notebook
+
+The notebook helped in:
+
+- validating mathematical assumptions,
+- debugging trendline behavior,
+- understanding support/resistance persistence,
+- and refining active trendline logic.
+
+Once the logic became stable, it was integrated into the live
+event-driven system inside `main.py`.
+
+---
+
 # 🔮 Future Improvements
 
 - Multi-symbol support
