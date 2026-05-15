@@ -182,7 +182,7 @@ A trendline remains active only while price respects the support/resistance zone
 
 If price strongly breaks the zone, the trendline is invalidated automatically.
 
-![Chart](sccreenshorts/invalid.png)
+![Chart](screenshots/invalid.png)
 ---
 
 # 🧪 Research & Prototyping Notebook
