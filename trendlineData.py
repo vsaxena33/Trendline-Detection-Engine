@@ -42,7 +42,7 @@ def generate_trendline_data(df, trend_data, type):
         # We convert it into a rough standard deviation estimate
         # so we can create a support/resistance "zone"
         # instead of a single thin line.
-        sd = math.sqrt(result[2])
+        sd = math.sqrt(result[2] / len(points)
 
         # We create two arrays:
         #
