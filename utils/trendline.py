@@ -153,7 +153,7 @@ def generate_trendline_data(df, trend_data, type):
         # We convert it into a rough standard deviation estimate
         # so we can create a support/resistance "zone"
         # instead of a single thin line.
-        sd = math.sqrt(result[2])
+        sd = math.sqrt(result[2] / len(points))
 
         # We create two arrays:
         #
@@ -191,10 +191,10 @@ def generate_trendline_data(df, trend_data, type):
             #
             # - If price rises above resistance strongly,
             #   resistance has failed.
-            if df['low'].iloc[i] + 2*sd < val and type == 'support':
+            if df['low'].iloc[i] + 3 * sd < val and type == 'support':
                 is_active = False
                 break
-            elif df['high'].iloc[i] - 2*sd > val and type == 'resistance':
+            elif df['high'].iloc[i] - 3 * sd > val and type == 'resistance':
                 is_active = False
                 break
 
