@@ -78,7 +78,7 @@ resolution = "1"
 
 
 # ============================================================
-# Update Logic for Live Data
+# Support and Resistance Data
 # ============================================================
 def support_resistance(df):
     """
@@ -119,6 +119,9 @@ def support_resistance(df):
     return minwindows[-1], maxwindows[-1]
 
 
+# ============================================================
+# Generate Trendline Data
+# ============================================================
 def generate_trendline_data(df, trend_data, type):
     """
     Converts trendln output into mplfinance-compatible line data.
